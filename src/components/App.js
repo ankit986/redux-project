@@ -26,13 +26,13 @@ class App extends Component {
 
 
   render() {
-    const { nameOfUser, authedUser, avataarsURL, loading } = this.props
+    const { nameOfUser, authedUser, avatarURL, loading } = this.props
 
     return (
       <BrowserRouter >
         <Fragment>
           <LoadingBar />
-          <NavigationBar authedUser={authedUser} nameOfUser={nameOfUser} avataarsURL={avataarsURL} />
+          <NavigationBar authedUser={authedUser} nameOfUser={nameOfUser} avatarURL={avatarURL} />
           <div>
             {loading ? null :
               <Switch >

@@ -94,7 +94,7 @@ function mapStateToProps({ users, questions, authedUser }, { qid }) {
     
     const selectedOption = optionOne.votes.includes(authedUser) ? 'optionOne' : optionTwo.votes.includes(authedUser) ? 'optionTwo' : null;
     
-    const avatarOfAuthor = users[question.author].avataarsURL
+    const avatarOfAuthor = users[question.author].avatarURL
     const nameOfAuther = users[question.author].name;
     
     return {

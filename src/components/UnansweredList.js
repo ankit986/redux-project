@@ -9,7 +9,7 @@ class UnansweredList extends Component {
             <div className=" ">
                 <hr />
                 <div>
-                    <h1 className='f2'>UnansweredList</h1>
+                    <h1 className='f2'>Unanswered List</h1>
                     <ul>
                         {this.props.idOfQuestionUnAnswered.map(qid =>
                             <li key={qid}>

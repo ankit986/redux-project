@@ -106,7 +106,7 @@ function mapStateToProps({ users, questions, authedUser }, props) {
 
     const author = que ? users[que.author] : {};
     const optionOne = que ? que.optionOne.text : '';
-    const avatarOfAuthor = author.avataarsURL;
+    const avatarOfAuthor = author.avatarURL;
     const optionTwo = que ? que.optionTwo.text : '';
     const nameOfAuther = author.name
     

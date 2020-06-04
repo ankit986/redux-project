@@ -51,7 +51,7 @@ class QuestionOutline extends Component {
 
 function mapStateToProps({ users, questions }, { qid }) {
     const author = questions[qid].author
-    const authorAvator = users[author].avataarsURL;
+    const authorAvator = users[author].avatarURL;
     const optionOneData = questions[qid].optionOne.text;
     const nameOfAuther = users[author].name;
 

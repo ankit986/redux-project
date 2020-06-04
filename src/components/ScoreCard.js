@@ -37,7 +37,7 @@ class Score extends Component {
 
 function mapStateToProps({ users, questions }, { uid }) {
     const nameOfUser = users[uid].name;
-    const userAvatar = users[uid].avataarsURL;
+    const userAvatar = users[uid].avatarURL;
     const answeredQuestions = Object.keys(users[uid].answers).length;
     const createdQuesstions = Object.keys(users[uid].questions).length;
     return {

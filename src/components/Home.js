@@ -5,7 +5,7 @@ import UnansweredList from './UnansweredList'
 
 class Home extends Component {
     state = {
-        list: 'UnansweredList'
+        list: 'Unanswered List'
     }
 
     handleClick = (e) => {
@@ -34,7 +34,7 @@ class Home extends Component {
                     </div>
                     <div className='ml6  mr6'>
 
-                        {list !== 'UnansweredList'
+                        {list !== 'Unanswered List'
                             ? <AnsweredList />
                             : <UnansweredList />}
                     </div>

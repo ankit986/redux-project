@@ -48,7 +48,7 @@ function NavBar(props) {
                                 <span className='pt2'> Hello, {props.nameOfUser}</span>
                                 <img
                                     alt={`Avatar of ${props.nameOfUser}`}
-                                    src={`${props.avataarsURL}`}
+                                    src={`${props.avatarURL}`}
                                     className='avatar active'
                                 />
                                 <button className='btn-nav' onClick={handleLogout}>Logout</button>
@@ -65,7 +65,7 @@ function NavBar(props) {
 function mapStateToProps({ authedUser, users }) {
 
     return {
-        avataarsURL: authedUser ? users[authedUser].avataarsURL : '',
+        avatarURL: authedUser ? users[authedUser].avatarURL : '',
         nameOfUser: authedUser ? users[authedUser].name : '',
     }
 

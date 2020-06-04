@@ -8,7 +8,7 @@ class AnsweredList extends Component {
             <div className="left ">
                 <hr />
                 <div>
-                    <h1 className='f2'>AnsweredList</h1>
+                    <h1 className='f2'>Answered List</h1>
                     <ul>
                         {this.props.idOfQuestionAnswered.map(qid =>
                             <li key={qid}>
